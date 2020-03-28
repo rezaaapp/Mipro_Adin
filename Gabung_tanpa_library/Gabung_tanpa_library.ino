@@ -21,7 +21,7 @@ int g = 13;
 int O_value;
 int P_value;
 int Q_value;
-int R_value;
+//int R_value;
 
 int read_value;
 
@@ -38,7 +38,7 @@ void setup() {
   pinMode(P, INPUT);
   pinMode(Q, INPUT);
 
-
+//Inisialisasi 7segment
   pinMode(a, OUTPUT);
   pinMode(b, OUTPUT);
   pinMode(c, OUTPUT);
