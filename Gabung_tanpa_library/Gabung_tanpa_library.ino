@@ -1,21 +1,21 @@
 //Inisialisasi Keypad
-int K = 0;  
-int L = 1;  
-int M = 2;  
-int N = 3;  
+int K = 7;  
+int L = 6;  
+int M = 5;  
+int N = 4;  
 
-int O = 4;  
-int P = 5;  
-int Q = 6; 
+int O = 3;  
+int P = 2;  
+int Q = 12; 
 
 //Inisialisasi 7segment
-int a = 7; 
-int b = 8; 
-int c = 9; 
-int d = 10; 
-int e = 11; 
-int f = 12; 
-int g = 13; 
+int a = 10; 
+int b = 11; 
+int c = A3; 
+int d = A4; 
+int e = A5; 
+int f = 9; 
+int g = 8; 
 
 
 int O_value;
