@@ -54,6 +54,7 @@ void setup() {
   digitalWrite(L, LOW);
   digitalWrite(M, LOW);
   digitalWrite(N, LOW);
+  kosong();
 
   // INITIALLY SET 7 SEGMENT TO DISPLAY EACH SEGMENT TO TEST FOR DEFECTS
 
@@ -234,6 +235,16 @@ void pagar() {
   delay(500);
   nol();
   delay(500);
+}
+
+void kosong(){
+  digitalWrite(a, HIGH);
+  digitalWrite(b, HIGH);
+  digitalWrite(c, HIGH);
+  digitalWrite(d, HIGH);
+  digitalWrite(e, HIGH);
+  digitalWrite(f, HIGH);
+  digitalWrite(g, HIGH);
 }
 
 // LOOP ROUTINE:
