@@ -90,21 +90,6 @@ void setup() {
 
 
 
-//void seven_segment_display(int number)
-//{
-///*  if(number==1)
-//  {*/
-//     digitalWrite(a, LOW);
-//     digitalWrite(b, HIGH);
-//     digitalWrite(c, HIGH);
-//     digitalWrite(d, LOW);
-//     digitalWrite(e, LOW);
-//     digitalWrite(f, LOW);
-//     digitalWrite(g, LOW);
-////  }
-//  return;
-//}
-
 //Angka seven segment
 void hiji() {
   digitalWrite(a, HIGH);
@@ -136,7 +121,26 @@ void tujuh() {
 }
 
 void bintang() {
-
+  nol();
+  delay(500);
+  hiji();
+  delay(500);
+  dua();
+  delay(500);
+  tilu();
+  delay(500);
+  opat();
+  delay(500);
+  lima();
+  delay(500);
+  genep();
+  delay(500);
+  tujuh();
+  delay(500);
+  dalapan();
+  delay(500);
+  salapan();
+  delay(500);
 }
 
 void dua() {
@@ -207,6 +211,29 @@ void salapan() {
   digitalWrite(e, HIGH);
   digitalWrite(f, LOW);
   digitalWrite(g, LOW);
+}
+
+void pagar() {
+  salapan();
+  delay(500);
+  dalapan();
+  delay(500);
+  tujuh();
+  delay(500);
+  genep();
+  delay(500);
+  lima();
+  delay(500);
+  opat();
+  delay(500);
+  tilu();
+  delay(500);
+  dua();
+  delay(500);
+  hiji();
+  delay(500);
+  nol();
+  delay(500);
 }
 
 // LOOP ROUTINE:
@@ -286,6 +313,8 @@ label:
     read_value = digitalRead(O);
     if (read_value == 0)
     {
+      bintang();
+      delay(500);
       goto label;
     }
 
@@ -426,6 +455,7 @@ label:
     read_value = digitalRead(Q);
     if (read_value == 0)
     {
+      pagar();
       goto label;
     }
 
