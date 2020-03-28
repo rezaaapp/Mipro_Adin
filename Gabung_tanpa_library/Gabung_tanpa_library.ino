@@ -1,21 +1,21 @@
 //Inisialisasi Keypad
-int K = 7;
-int L = 6;
-int M = 5;
-int N = 4;
+int K = 0;
+int L = 1;
+int M = 2;
+int N = 3;
 
-int O = 3;
-int P = 2;
-int Q = 12;
+int O = 4;
+int P = 5;
+int Q = 6;
 
 //Inisialisasi 7segment
-int a = 10;
-int b = 11;
-int c = A3;
-int d = A4;
-int e = A5;
-int f = 9;
-int g = 8;
+int a = 7;
+int b = 8;
+int c = 9;
+int d = 10;
+int e = 11;
+int f = 12;
+int g = 13;
 
 
 int O_value;
@@ -57,35 +57,35 @@ void setup() {
 
   // INITIALLY SET 7 SEGMENT TO DISPLAY EACH SEGMENT TO TEST FOR DEFECTS
 
-  digitalWrite(a, HIGH);
-  digitalWrite(b, HIGH);
-  digitalWrite(c, HIGH);
-  digitalWrite(d, HIGH);
-  digitalWrite(e, HIGH);
-  digitalWrite(f, HIGH);
-  digitalWrite(g, HIGH);
-  delay(500);
-  digitalWrite(a, LOW);
-  delay(500);
-  digitalWrite(b, LOW);
-  delay(500);
-  digitalWrite(c, LOW);
-  delay(500);
-  digitalWrite(d, LOW);
-  delay(500);
-  digitalWrite(e, LOW);
-  delay(500);
-  digitalWrite(f, LOW);
-  delay(500);
-  digitalWrite(g, LOW);
-  delay(500);
-  digitalWrite(a, HIGH);
-  digitalWrite(b, HIGH);
-  digitalWrite(c, HIGH);
-  digitalWrite(d, HIGH);
-  digitalWrite(e, HIGH);
-  digitalWrite(f, HIGH);
-  digitalWrite(g, HIGH);
+  //  digitalWrite(a, HIGH);
+  //  digitalWrite(b, HIGH);
+  //  digitalWrite(c, HIGH);
+  //  digitalWrite(d, HIGH);
+  //  digitalWrite(e, HIGH);
+  //  digitalWrite(f, HIGH);
+  //  digitalWrite(g, HIGH);
+  //  delay(500);
+  //  digitalWrite(a, LOW);
+  //  delay(500);
+  //  digitalWrite(b, LOW);
+  //  delay(500);
+  //  digitalWrite(c, LOW);
+  //  delay(500);
+  //  digitalWrite(d, LOW);
+  //  delay(500);
+  //  digitalWrite(e, LOW);
+  //  delay(500);
+  //  digitalWrite(f, LOW);
+  //  delay(500);
+  //  digitalWrite(g, LOW);
+  //  delay(500);
+  //  digitalWrite(a, HIGH);
+  //  digitalWrite(b, HIGH);
+  //  digitalWrite(c, HIGH);
+  //  digitalWrite(d, HIGH);
+  //  digitalWrite(e, HIGH);
+  //  digitalWrite(f, HIGH);
+  //  digitalWrite(g, HIGH);
 }
 
 
@@ -239,13 +239,7 @@ label:
     if (read_value == 0)
     {
       // Display 1 in seven segment display
-      digitalWrite(a, HIGH);
-      digitalWrite(b, LOW);
-      digitalWrite(c, LOW);
-      digitalWrite(d, HIGH);
-      digitalWrite(e, HIGH);
-      digitalWrite(f, HIGH);
-      digitalWrite(g, HIGH);
+      hiji();
       delay(100);
       goto label;
     }
@@ -261,13 +255,7 @@ label:
     if (read_value == 0)
     {
       // Display 4 in seven segment display
-      digitalWrite(a, HIGH);
-      digitalWrite(b, LOW);
-      digitalWrite(c, LOW);
-      digitalWrite(d, HIGH);
-      digitalWrite(e, HIGH);
-      digitalWrite(f, LOW);
-      digitalWrite(g, LOW);
+      opat();
       delay(100);
       goto label;
     }
@@ -283,13 +271,7 @@ label:
     if (read_value == 0)
     {
       // Display 7 in seven segment display
-      digitalWrite(a, LOW);
-      digitalWrite(b, LOW);
-      digitalWrite(c, LOW);
-      digitalWrite(d, HIGH);
-      digitalWrite(e, HIGH);
-      digitalWrite(f, HIGH);
-      digitalWrite(g, HIGH);
+      tujuh();
       delay(100);
       goto label;
     }
@@ -324,13 +306,7 @@ label:
     if (read_value == 0)
     {
       // Display 2 in seven segment display
-      digitalWrite(a, LOW);
-      digitalWrite(b, LOW);
-      digitalWrite(c, HIGH);
-      digitalWrite(d, LOW);
-      digitalWrite(e, LOW);
-      digitalWrite(f, HIGH);
-      digitalWrite(g, LOW);
+      dua();
       delay(100);
       goto label;
     }
@@ -348,13 +324,7 @@ label:
     if (read_value == 0)
     {
       // Display 5 in seven segment display
-      digitalWrite(a, LOW);
-      digitalWrite(b, HIGH);
-      digitalWrite(c, LOW);
-      digitalWrite(d, LOW);
-      digitalWrite(e, HIGH);
-      digitalWrite(f, LOW);
-      digitalWrite(g, LOW);
+      lima();
       delay(100);
       goto label;
     }
@@ -370,13 +340,7 @@ label:
     if (read_value == 0)
     {
       // Display 8 in seven segment display
-      digitalWrite(a, LOW);
-      digitalWrite(b, LOW);
-      digitalWrite(c, LOW);
-      digitalWrite(d, LOW);
-      digitalWrite(e, LOW);
-      digitalWrite(f, LOW);
-      digitalWrite(g, LOW);
+      dalapan();
       delay(100);
       goto label;
     }
@@ -393,13 +357,7 @@ label:
     if (read_value == 0)
     {
       // Display 0 in seven segment display
-      digitalWrite(a, LOW);
-      digitalWrite(b, LOW);
-      digitalWrite(c, LOW);
-      digitalWrite(d, LOW);
-      digitalWrite(e, LOW);
-      digitalWrite(f, LOW);
-      digitalWrite(g, HIGH);
+      nol();
       delay(100);
       goto label;
     }
@@ -421,13 +379,7 @@ label:
     if (read_value == 0)
     {
       // Display 3 in seven segment display
-      digitalWrite(a, LOW);
-      digitalWrite(b, LOW);
-      digitalWrite(c, LOW);
-      digitalWrite(d, LOW);
-      digitalWrite(e, HIGH);
-      digitalWrite(f, HIGH);
-      digitalWrite(g, LOW);
+      tilu();
       delay(100);
       goto label;
     }
@@ -443,13 +395,7 @@ label:
     if (read_value == 0)
     {
       // Display 6 in seven segment display
-      digitalWrite(a, LOW);
-      digitalWrite(b, HIGH);
-      digitalWrite(c, LOW);
-      digitalWrite(d, LOW);
-      digitalWrite(e, LOW);
-      digitalWrite(f, LOW);
-      digitalWrite(g, LOW);
+      genep();
       delay(100);
       goto label;
     }
@@ -465,13 +411,7 @@ label:
     if (read_value == 0)
     {
       // Display 9 in seven segment display
-      digitalWrite(a, LOW);
-      digitalWrite(b, LOW);
-      digitalWrite(c, LOW);
-      digitalWrite(d, LOW);
-      digitalWrite(e, HIGH);
-      digitalWrite(f, LOW);
-      digitalWrite(g, LOW);
+      salapan();
       delay(100);
       goto label;
     }
