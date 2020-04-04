@@ -21,7 +21,7 @@ int g = 13;
 int O_value;
 int P_value;
 int Q_value;
-//int R_value;
+int R_value;
 
 int read_value;
 
@@ -38,7 +38,7 @@ void setup() {
   pinMode(P, INPUT);
   pinMode(Q, INPUT);
 
-//Inisialisasi 7segment
+
   pinMode(a, OUTPUT);
   pinMode(b, OUTPUT);
   pinMode(c, OUTPUT);
@@ -92,7 +92,7 @@ void setup() {
 
 
 //Angka seven segment
-void hiji() {
+void one() {
   digitalWrite(a, HIGH);
   digitalWrite(b, LOW);
   digitalWrite(c, LOW);
@@ -101,7 +101,7 @@ void hiji() {
   digitalWrite(f, HIGH);
   digitalWrite(g, HIGH);
 }
-void opat() {
+void four() {
   digitalWrite(a, HIGH);
   digitalWrite(b, LOW);
   digitalWrite(c, LOW);
@@ -111,7 +111,7 @@ void opat() {
   digitalWrite(g, LOW);
 }
 
-void tujuh() {
+void seven() {
   digitalWrite(a, LOW);
   digitalWrite(b, LOW);
   digitalWrite(c, LOW);
@@ -124,27 +124,27 @@ void tujuh() {
 void bintang() {
   nol();
   delay(500);
-  hiji();
+  one();
   delay(500);
-  dua();
+  two();
   delay(500);
-  tilu();
+  three();
   delay(500);
-  opat();
+  four();
   delay(500);
-  lima();
+  five();
   delay(500);
-  genep();
+  six();
   delay(500);
-  tujuh();
+  seven();
   delay(500);
-  dalapan();
+  eight();
   delay(500);
-  salapan();
+  nine();
   delay(500);
 }
 
-void dua() {
+void two() {
   digitalWrite(a, LOW);
   digitalWrite(b, LOW);
   digitalWrite(c, HIGH);
@@ -154,7 +154,7 @@ void dua() {
   digitalWrite(g, LOW);
 }
 
-void lima() {
+void five() {
   digitalWrite(a, LOW);
   digitalWrite(b, HIGH);
   digitalWrite(c, LOW);
@@ -164,7 +164,7 @@ void lima() {
   digitalWrite(g, LOW);
 }
 
-void dalapan() {
+void eight() {
   digitalWrite(a, LOW);
   digitalWrite(b, LOW);
   digitalWrite(c, LOW);
@@ -184,7 +184,7 @@ void nol() {
   digitalWrite(g, HIGH);
 }
 
-void tilu() {
+void three() {
   digitalWrite(a, LOW);
   digitalWrite(b, LOW);
   digitalWrite(c, LOW);
@@ -194,7 +194,7 @@ void tilu() {
   digitalWrite(g, LOW);
 }
 
-void genep() {
+void six() {
   digitalWrite(a, LOW);
   digitalWrite(b, HIGH);
   digitalWrite(c, LOW);
@@ -204,7 +204,7 @@ void genep() {
   digitalWrite(g, LOW);
 }
 
-void salapan() {
+void nine() {
   digitalWrite(a, LOW);
   digitalWrite(b, LOW);
   digitalWrite(c, LOW);
@@ -215,23 +215,23 @@ void salapan() {
 }
 
 void pagar() {
-  salapan();
+  nine();
   delay(500);
-  dalapan();
+  eight();
   delay(500);
-  tujuh();
+  seven();
   delay(500);
-  genep();
+  six();
   delay(500);
-  lima();
+  five();
   delay(500);
-  opat();
+  four();
   delay(500);
-  tilu();
+  three();
   delay(500);
-  dua();
+  two();
   delay(500);
-  hiji();
+  one();
   delay(500);
   nol();
   delay(500);
@@ -277,7 +277,7 @@ label:
     if (read_value == 0)
     {
       // Display 1 in seven segment display
-      hiji();
+      one();
       delay(100);
       goto label;
     }
@@ -293,7 +293,7 @@ label:
     if (read_value == 0)
     {
       // Display 4 in seven segment display
-      opat();
+      four();
       delay(100);
       goto label;
     }
@@ -309,7 +309,7 @@ label:
     if (read_value == 0)
     {
       // Display 7 in seven segment display
-      tujuh();
+      seven();
       delay(100);
       goto label;
     }
@@ -346,7 +346,7 @@ label:
     if (read_value == 0)
     {
       // Display 2 in seven segment display
-      dua();
+      two();
       delay(100);
       goto label;
     }
@@ -364,7 +364,7 @@ label:
     if (read_value == 0)
     {
       // Display 5 in seven segment display
-      lima();
+      five();
       delay(100);
       goto label;
     }
@@ -380,7 +380,7 @@ label:
     if (read_value == 0)
     {
       // Display 8 in seven segment display
-      dalapan();
+      eight();
       delay(100);
       goto label;
     }
@@ -419,7 +419,7 @@ label:
     if (read_value == 0)
     {
       // Display 3 in seven segment display
-      tilu();
+      three();
       delay(100);
       goto label;
     }
@@ -435,7 +435,7 @@ label:
     if (read_value == 0)
     {
       // Display 6 in seven segment display
-      genep();
+      six();
       delay(100);
       goto label;
     }
@@ -451,7 +451,7 @@ label:
     if (read_value == 0)
     {
       // Display 9 in seven segment display
-      salapan();
+      nine();
       delay(100);
       goto label;
     }
