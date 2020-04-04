@@ -51,12 +51,12 @@ void tekan_sabun() {
     // wait 15 ms for servo to reach the position
     delay(15); // Wait for 15 millisecond(s)
   }
-  for (pos = 0; pos >= 0; pos -= 0) {
-    // tell servo to go to position in variable 'pos'
-    servo_9.write(pos);
-    // wait 15 ms for servo to reach the position
-    delay(15); // Wait for 15 millisecond(s)
-  }
+  //  for (pos = 0; pos >= 0; pos -= 0) {
+  //    // tell servo to go to position in variable 'pos'
+  //    servo_9.write(pos);
+  //    // wait 15 ms for servo to reach the position
+  //    delay(15); // Wait for 15 millisecond(s)
+  //  }
 }
 
 void diam_sabun() {
@@ -76,11 +76,15 @@ void loop()
   //  Serial.print("in, ");
   if (cm <= 15) {
     tekan_sabun();
+    Serial.println("tekan_sabun");
+    delay(50);
   }
-  else if (cm >= 15) {
-    diam_sabun();
-  }
-  Serial.print(cm);
-  Serial.println("cm");
-  delay(100); // Wait for 100 millisecond(s)
+  //  else if ( cm >= 15)  {
+  //    diam_sabun();
+  //    Serial.println("diam_sabun");
+  //    delay(50);
+  //  }
+  //  Serial.print(cm);
+  //  Serial.println("cm");
+  //  delay(100); // Wait for 100 millisecond(s)
 }
