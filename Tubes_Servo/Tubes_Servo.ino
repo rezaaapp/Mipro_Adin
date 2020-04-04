@@ -23,9 +23,15 @@ void tekan_sabun() {
     // wait 15 ms for servo to reach the position
     delay(15); // Wait for 15 millisecond(s)
   }
+  for (pos = 0; pos >= 0; pos -= 0) {
+    // tell servo to go to position in variable 'pos'
+    servo_9.write(pos);
+    // wait 15 ms for servo to reach the position
+    delay(15); // Wait for 15 millisecond(s)
+  }
 }
 
 void loop()
 {
- tekan_sabun();
+  tekan_sabun();
 }
